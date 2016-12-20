@@ -1,0 +1,8 @@
+td > p {
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+table {
+  table-layout: fixed;
+}
