@@ -5,7 +5,7 @@ mongoose.connect('localhost:27017/Team');
 var members = [
   new MemberInfo({
     info: {
-      name: '簡紹安',
+      name: '陳毓瑋',
       studentId: '102062118',
       gender: '男',
       phone: '0932694730',
