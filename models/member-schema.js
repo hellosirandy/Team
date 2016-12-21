@@ -7,7 +7,7 @@ var memberSchema = new Schema({
     studentId: String,
     gender: String,
     phone: String,
-    birthday: String,
+    birthday: Date,
     major: String,
     grade: String,
     email: String,

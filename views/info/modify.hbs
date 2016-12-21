@@ -1,46 +1,65 @@
 <link rel="stylesheet" href="/stylesheets/info/modify.css">
-<div class="row">
-  <div class="col s4 offset-s4">
+<script type="text/javascript" src="/javascripts/info/modify.js"></script>
+<div class="row" style="margin-top: 50px;">
+  <div class="col s6 offset-s3">
     <form method="post">
-      <div class="input-field col s12">
-        <input placeholder="輸入姓名" id="inputName" type="text" class="validate">
+      <div class="input-field col s6">
+        <input id="inputName" type="text" class="validate" name="inputName">
+        <label for="inputName">姓名</label>
       </div>
-      <div class="input-field col s12">
-        <input placeholder="輸入學號" id="input" type="text" class="validate">
+      <div class="input-field col s6">
+        <input id="inputStudentId" type="text" class="validate" name="inputStudentId">
+        <label for="inputStudentId">學號</label>
       </div>
-      <div class="col s12" id="genderField">
+      <div class="input-field col s6" id="genderField">
         <p>性別：</p>
         <p>
-          <input name="genderGroup" type="radio" id="genderMale" />
+          <input name="genderGroup" type="radio" id="genderMale" value="男"/>
           <label for="genderMale">男</label>
         </p>
         <p>
-          <input name="genderGroup" type="radio" id="genderFemale" />
+          <input name="genderGroup" type="radio" id="genderFemale" value="女"/>
           <label for="genderFemale">女</label>
         </p>
       </div>
-      <div class="input-field col s12">
-        <input type="date" class="datepicker" id="chooseBirthday">
-        <!-- <input placeholder="輸入手機" id="inputPhone" type="text" class="validate"> -->
+      <div class="input-field col s6">
+        <input type="date" class="datepicker" id="pickBirthday" name="pickBirthday">
+        <label for="pickBirthday">生日</label>
+      </div>
+      <div class="input-field col s6">
+        <input type="text" class="validate" id="inputPhone" name="inputPhone">
+        <label for="inputPhone">聯絡電話</label>
+      </div>
+      <div class="input-field col s6">
+        <input type="email" class="validate" id="inputEmail" name="inputEmail">
+        <label for="inputPhone" data-error="wrong" data-success="right">電子郵件</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="inputMajor" type="text" class="validate" name="inputMajor">
+        <label for="inputMajor">系別</label>
+      </div>
+      <div class="input-field col s6">
+        <input id="inputGrade" type="text" class="validate" name="inputGrade">
+        <label for="inputGrade">級別</label>
       </div>
       <div class="input-field col s12">
-        <input placeholder="輸入" id="input" type="text" class="validate">
+        <input id="inputAddress" type="text" class="validate" name="inputAddress">
+        <label for="inputAddress">住址</label>
       </div>
-      <div class="input-field col s12">
-        <input placeholder="輸入" id="input" type="text" class="validate">
+      <div class="input-field col s6">
+        <input id="inputPersonalId" type="text" class="validate" name="inputPersonalId">
+        <label for="inputPersonalId">身分證字號</label>
       </div>
-      <div class="input-field col s12">
-        <input placeholder="輸入" id="input" type="text" class="validate">
+      <div class="input-field col s6">
+        <input id="inputBeneficiary" type="text" class="validate" name="inputBeneficiary">
+        <label for="inputPersonalId">受益人</label>
       </div>
-      <div class="input-field col s12">
-        <input placeholder="輸入" id="input" type="text" class="validate">
+      <div class="col right">
+        <button class="btn-large waves-effect waves-light" type="submit">Submit
+          <i class="material-icons right">send</i>
+        </button>
       </div>
-      <div class="input-field col s12">
-        <input placeholder="輸入" id="input" type="text" class="validate">
-      </div>
-      <div class="input-field col s12">
-        <input placeholder="輸入" id="input" type="text" class="validate">
-      </div>
+
     </form>
   </div>
 </div>
